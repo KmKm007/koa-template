@@ -1,0 +1,45 @@
+{
+  "name": "koa-vue-ssr-template",
+  "version": "1.1.0",
+  "description": "Koa-Vue-SSR模板",
+  "author": "KmKm",
+  "private": true,
+  "scripts": {
+    "dev": "backpack dev",
+    "build": "yarn run tslint && yarn run lint && nuxt build && backpack build",
+    "start": "cross-env NODE_ENV=production node build/main.js",
+    "precommit": "npm run lint",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "tslint": "tslint -c tslint.json 'server/**/*.ts'"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.0.1",
+    "koa": "^2.4.1",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "moment": "^2.24.0",
+    "nuxt": "^1.4.5",
+    "source-map-support": "^0.4.15"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "awesome-typescript-loader": "3.0.0-beta.18",
+    "babel-eslint": "^7.1.1",
+    "backpack-core": "^0.3.0",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.11.0",
+    "require-directory": "^2.1.1",
+    "sass-loader": "^7.1.0",
+    "scmp": "^2.0.0",
+    "typescript": "^3.2.4"
+  }
+}

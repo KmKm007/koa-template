@@ -1,42 +1,27 @@
-# Nuxt.js with Koa
+# {{ name }}
 
-> [KoaJS](http://koajs.com/) + [Nuxt.js](https://nuxtjs.org) = :zap:
+> {{ description }}
 
-## Installation
+## Build Setup
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
+``` bash
+# install dependencies
+$ npm install # Or yarn install*[see note below]
 
-```bash
-vue init nuxt-community/koa-template <project-name>
-cd <project-name> # move to your project
-npm install # or yarn install*[see note below]
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
 ```
-
-> Make sure to use a version of vue-cli >= 2.1 (vue -V).
 
 *Note: Due to a bug in yarn's engine version detection code if you are
 using a prerelease version of Node (i.e. v7.6.0-rc.1) you will need to either:
-
   1. Use `npm install`
   2. Run `yarn` with a standard release of Node and then switch back
 
-## Commands
-
-| Command | Description |
-|---------|-------------|
-| npm run dev | Start KoaJS server in development with Nuxt.js in dev mode (hot reloading). Listen on [http://localhost:3000](http://localhost:3000). |
-| npm run build | Build the nuxt.js web application for production. |
-| npm start | Start KoaJS server in production. |
-
-
-## Documentation
-
-- [KoaJS](http://koajs.com/)
-- [Nuxt.js](https://nuxtjs.org/guide/)
-- [Vue.js](http://vuejs.org/guide/)
-
-## Licenses
-
-- [KoaJS license](https://github.com/koajs/koa/blob/master/LICENSE)
-- [NuxtJS license](https://github.com/nuxt/nuxt.js/blob/master/LICENSE.md)
-- [VueJS license](https://github.com/vuejs/vue/blob/master/LICENSE)
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
